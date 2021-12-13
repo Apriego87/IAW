@@ -1,0 +1,18 @@
+.principal {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.rojo {
+    color: red;
+}
+
+.verde {
+    color: green;
+}
+
+.azul {
+    color: blue;
+}
