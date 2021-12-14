@@ -21,33 +21,44 @@
 
         $userNew = $_POST['user'];
         $passNew = $_POST['pass'];
+        $hash = hash("sha256","$passNew");
 
         function alert($mensaje){
             echo "<script> alert(\"$mensaje\") </script>";
         }
 
-        $sql2 = "SELECT id, usuario, password FROM usuarios";
-        $result = mysqli_query($conexion,$sql2);
+        // Crear conexion con la base datos
+        $conexion = mysqli_connect($servername, $username, $password, $dbname);
+        // Check connection
+        if (!$conexion) {
+            alert("ERROR: " . mysqli_connect_error());
+        }else{
+            alert("Conexión correcta.");
+        }
 
+        
+        //query para conseguir usuarios y contraseñas
+        $sql2 = "SELECT usuario, password FROM usuarios;";
+
+        $result = mysqli_query($conexion, $sql2);
+        
+        //iteramos sobre todas las filas de la tabla usuarios
         while($row = mysqli_fetch_assoc($result)) {
+            
+            //si coinciden hemos encontrado el usuario
             if ($row["usuario"] == $userNew){
-                if($row["password"] = $passNew){
-                    echo "El usuario ha iniciado sesión correctamente.";
+                
+                //la contraseña estaría bien introducida
+                if ($row["password"] == $hash){
+                    echo "<h1>Inicio de sesión correcto.</h1>";
+                }else{
+                    echo "<h1>La contraseña no es correcta</h1>";
                 }
-                else{
-                    echo "Contraseña incorrecta.";
-                }
-            }
-            else{
-                echo "Usuario incorrecto.";
             }
         }
-        mysqli_close($conexion);
+        mysqli_close($conn);
 
     ?>
 
-    <br><br>
-    <input type="button" onclick="history.back()" value="Atrás">
 </body>
-
 </html>
