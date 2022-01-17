@@ -52,7 +52,7 @@
                 if ($row["password"] == $hash){
                     echo "<h1>Inicio de sesión correcto.</h1>";
                 }else{
-                    echo "<h1>La contraseña no es correcta</h1>";
+                    echo "<h1>La contraseña no es correcta.</h1>";
                 }
             }
         }
