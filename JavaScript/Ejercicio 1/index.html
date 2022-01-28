@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
+    <style>
+        * {
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            width: 400px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+    </style>
 </head>
+
 <body>
-    <h1>si</h1>
+    <script>
+        document.write("<h1>Parte 1</h1>")
+        document.write("<div><img src=\"Perros/gafas.jpg\"></div><br>")
+        document.write("<div><img src=\"Monos/cortesito.jpg\"></div><br><br><hr>")
+
+        arrayPerros = ["atrapao.jpg", "gafas.jpg", "sentao.jpg"]
+        document.write("<h1>Parte 2</h1>")
+        for (let i = 0; i < arrayPerros.length; i++) {
+            document.write(`<div><img src=\"Perros/${arrayPerros[i]}\"></div><br>`);
+        }
+
+        var losPerros = {
+            atrapao: "atrapao.jpg",
+            gafas: "gafas.jpg",
+            sentao: "sentao.jpg"
+        }
+
+        var losGatos = {
+            cagao: "cagao.jpg",
+            chulo: "chulo.jpg",
+            salam: "salam.jpg"
+        }
+
+        var losMonos = {
+            compu: "compu.jpg",
+            cortesito: "cortesito.jpg",
+            watr: "watr.jpg"
+        }
+
+        var losRoedores = {
+            diva: "diva.jpg",
+            gordo: "gordo.jpg",
+            que: "que.jpg"
+        }
+
+        var elDiccionario = {
+            perros: losPerros,
+            gatos: losGatos,
+            monos: losMonos,
+            roedores: losRoedores
+        }
+
+        document.write("<br><hr><h1>Parte 3</h1>")
+
+        document.write(`<div><img src=\"Roedores/${losRoedores.que}\"></div><br>`)
+
+        document.write(`<div><img src=\"Gatos/${elDiccionario.gatos.chulo}\"></div>`)
+
+        document.write("<h1>Parte 4</h1><hr><br>")
+        for (var nombre in losMonos) {
+            // document.write(`<img src=\"Monos/${nombre}\">`)
+            document.write(`<div><img src=\"Monos/${losMonos[nombre]}\"></div><br>`)
+        }
+    </script>
 </body>
+
 </html>
