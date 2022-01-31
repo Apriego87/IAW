@@ -7,6 +7,34 @@
     <title>HTML DOM</title>
 </head>
 <body>
-    <h1>Hola jiji</h1>
+    <h1>perros</h1>
+
+    <p class="p1">párrafo 1</p>
+    <p class="p2">párrafo 2</p>
+    <p class="p3">párrafo 3</p>
+
+    <img id="img1" src="../Ejercicio 1/Perros/gafas.jpg" >
+    <img id="img2" src="../Ejercicio 1/Perros/sentao.jpg">
+
+    <script>
+        var tit = document.querySelector("h1")
+        tit.style = "color: brown;"
+
+        var p1 = document.querySelector(".p1")
+        p1.style = "font-weight: bold; font-size: 25px;"
+
+        var p2 = document.querySelector(".p2")
+        p2.style = "text-align: center; border: dotted 2px red;"
+
+        var p3 = document.querySelector(".p3")
+        p3.innerHTML = "el párrafo 3 editado"
+
+        var img1 = document.querySelector("#img1")
+        img1.style = "height: 200px;"
+
+        var img2 = document.querySelector("#img2")
+        img2.src = "../Ejercicio 1/Monos/compu.jpg"
+        img2.style = "height: 300px;"
+    </script>
 </body>
 </html>

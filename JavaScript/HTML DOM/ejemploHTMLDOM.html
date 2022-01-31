@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <style>
+        * {
+            background-color: lavenderblush;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">HTML DOM</h1>
+
+    <p class="parrafo1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis quod delectus repellendus
+        ducimus reprehenderit iste voluptatibus nihil, perspiciatis dolorum suscipit adipisci totam alias consectetur ad
+        unde molestiae culpa sunt dolore.</p>
+
+    <img src="../Ejercicio 1/Roedores/diva.jpg ">
+
+    <script>
+        var elemTitulo = document.querySelector("#titulo")
+        elemTitulo.innerHTML = "rata página oficial"
+        elemTitulo.align = "center"
+
+        var elemParrafo = document.querySelector(".parrafo1")
+        elemParrafo.style = "border: 2px purple solid; padding: 10px 8px"
+
+        var elemImagen = document.querySelector("img")
+        elemImagen.src = "../Ejercicio 1/Roedores/que.jpg"
+        elemImagen.style = "width:300px;"
+    </script>
+</body>
+
+</html>
