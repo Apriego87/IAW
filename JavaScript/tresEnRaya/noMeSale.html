@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en raya</title>
+    <style>
+        table, tr, td {
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td onclick="escribirLetra(this)" id="ai"></td>
+            <td onclick="escribirLetra(this)" id="ac"></td>
+            <td onclick="escribirLetra(this)" id="ad"></td>
+        </tr>
+        <tr>
+            <td onclick="escribirLetra(this)" id="ci"></td>
+            <td onclick="escribirLetra(this)" id="cc"></td>
+            <td onclick="escribirLetra(this)" id="cd"></td>
+        </tr>
+        <tr>
+            <td onclick="escribirLetra(this)" id="di"></td>
+            <td onclick="escribirLetra(this)" id="dc"></td>
+            <td onclick="escribirLetra(this)" id="dd"></td>
+        </tr>
+    </table>
+    <script>
+        var contador = 0
+        function escribirLetra(elemento) {
+            var elem = elemento
+            if (contador % 2 != 0) {
+                elem.innerHTML = "O"
+            }
+            else {
+                elem.innerHTML = 'X'
+            }
+            contador = contador + 1
+            comprobar()
+        }
+        function comprobar(){
+            var ai, ac, ad, ci, cc, cd, di, dc, dd;
+            ai = document.getElementById("ai")
+            ac = document.getElementById("ac")
+            ad = document.getElementById("ad")
+            ci = document.getElementById("ci")
+            cc = document.getElementById("cc")
+            cd = document.getElementById("cd")
+            di = document.getElementById("di")
+            dc = document.getElementById("dc")
+            dd = document.getElementById("dd")
+
+            if ((ai == 'X') && (ac == 'X') && (ad == 'X')) {
+                window.alert('gana X')
+            }
+        }
+        
+    </script>
+</body>
+</html>
