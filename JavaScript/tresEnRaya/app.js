@@ -1,4 +1,4 @@
-var turno = "circulo"
+var turno = "o"
 
 var div11 = document.querySelector(".x1y1")
 var div12 = document.querySelector(".x1y2")
@@ -12,23 +12,67 @@ var div33 = document.querySelector(".x3y3")
 
 function hacerClick(clickedDiv) {
 
-    if (turno == "cruz") {
-        clickedDiv.imagen = "cruz"
-        clickedDiv.style["background-image"] = "url('equis.png')"
+    if (turno == "x") {
+        clickedDiv.imagen = "x"
+        clickedDiv.style["background-image"] = "url('x.png')"
 
-        turno = "circulo"
+        turno = "o"
     } else {
-        clickedDiv.imagen = "circulo"
-        clickedDiv.style["background-image"] = "url('o.jpg')"
+        clickedDiv.imagen = "o"
+        clickedDiv.style["background-image"] = "url('o.png')"
 
-        turno = "cruz"
+        turno = "x"
     }
-
     comprobar()
 }
 
 function comprobar() {
-    if (div11.imagen == "cruz" && div12.imagen == "cruz" && div13.imagen == "cruz") {
-        document.write("WIN")
+    if (div11.imagen == "o" && div12.imagen == "o" && div13.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div11.imagen == "o" && div21.imagen == "o" && div31.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div21.imagen == "o" && div22.imagen == "o" && div23.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div12.imagen == "o" && div22.imagen == "o" && div32.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div31.imagen == "o" && div32.imagen == "o" && div33.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div13.imagen == "o" && div23.imagen == "o" && div33.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div11.imagen == "o" && div22.imagen == "o" && div33.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    else if (div13.imagen == "o" && div22.imagen == "o" && div31.imagen == "o") {
+        window.location.href = "ganaoO.html"
+    }
+    if (div11.imagen == "x" && div12.imagen == "x" && div13.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div11.imagen == "x" && div21.imagen == "x" && div31.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div21.imagen == "x" && div22.imagen == "x" && div23.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div12.imagen == "x" && div22.imagen == "x" && div32.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div31.imagen == "x" && div32.imagen == "x" && div33.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div13.imagen == "x" && div23.imagen == "x" && div33.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div11.imagen == "x" && div22.imagen == "x" && div33.imagen == "x") {
+        window.location.href = "ganaoX.html"
+    }
+    else if (div13.imagen == "x" && div22.imagen == "x" && div31.imagen == "x") {
+        window.location.href = "ganaoX.html"
     }
 }
