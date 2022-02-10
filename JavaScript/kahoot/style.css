@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Calibri', light;
 }
+
+body {  
+    background-color: lavender;
+}
+
 .r1, .r2, .r3, .r4 {
     width: 45vw;
     height: 25vh;
@@ -14,9 +19,38 @@
     border: solid 1px black;
 }
 
+.marcador {
+    border: dotted 3px blue;
+    padding: 2px;
+}
+
+.bien {
+    width: 10vw;
+    left: 10vw;
+    position: absolute;
+}
+
+.b {
+    background-color: lightgreen;
+    border: double 5px black;
+    text-align: center;
+}
+
+.mal {
+    width: 10vw;
+    right: 10vw;
+    position: absolute;
+}
+
+.m {
+    background-color: indianred;
+    border: double 5px black;
+    text-align: center;
+}
+
 .e {
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2.5vh;
 }
 
 .p {
@@ -27,7 +61,7 @@
 }
 
 .r1 {
-    background-color: lightgreen;
+    background-color: #ACD1AF;
     bottom: 200px;
     left: 0;
 }
@@ -45,7 +79,7 @@
 }
 
 .r4 {
-    background-color: indianred;
+    background-color: #F47174;
     bottom: 0;
     right: 0;
 }
