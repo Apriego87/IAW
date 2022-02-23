@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>  
+    
+        <div class="titulo">
+            <h1 onclick="cambiarTit(this)">Título</h1>
+        </div>
+
+        <div class= "central">
+            <div class="menu">
+                
+                <ul>
+                    <li onclick="cambiarHome(this)">Home</a></li>
+                    <li onclick="cambiarImg1(this)">News</a></li>
+                    <li onclick="cambiarImg2(this)">Contact</a></li>
+                    <li onclick="cambiarImg22(this)">About</a></li>
+                  </ul>
+            </div>
+
+            <div class="texto"> 
+                <p class="p1">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                <br>
+                <p class="p2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <br>
+                <p onclick="cambiarParrafo(this)" class="p3">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
+            </div>
+
+        </div>
+
+        
+        <div class="pie">
+            <img src="orni1.jpg" id="orn1" >
+            <img src="orni2.jpg" id="orn2" >
+            <img src="orni3.png" id="orn3">
+        </div>
+
+        <script>
+            /* function cambiarParrafo() {
+                var parrafo3 = document.querySelector(".p3")
+                parrafo3.innerHTML = "Hola jiji"
+                parrafo3.style = "color: lavender"
+            } */
+
+            /* function cambiarParrafo(elemento) {
+                var parrafo3 = elemento
+                parrafo3.innerHTML = "Hola jaja"
+                parrafo3.style = "color: lavender"
+            } */
+
+            function cambiarHome(elemento) {
+                p1 = document.querySelector(".p1")
+                p1.innerHTML = "cambiao desde el p1"
+                p1.style = "font-size: 13px"
+            }
+
+            images = ["orni1.jpg", "orni2.jpg", "orni3.png"]
+
+            function cambiarImg1(elemento) {
+                img1 = document.querySelector("#orn1")
+                img1.src = "orni3.png"
+            }
+
+            function cambiarTit(elemento) {
+                tit = document.querySelector(".titulo")
+                tit.style = "background-color: salmon;"
+                tit.innerHTML = "<h1>pq tocas</h1>"
+            }
+
+            function cambiarImg2(elemento) {
+                img2 = document.querySelector("#orn2")
+                img2.style = "width: 300px; height: auto; border: 5px solid fuchsia;"
+            }
+
+            function cambiarImg22(elemento) {
+                img22 = document.querySelector("#orn2")
+                img22.style = "width: default; height: default; border: none;"
+            }
+        </script>
+    
+</body>
+</html>

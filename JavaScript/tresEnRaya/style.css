@@ -1,0 +1,63 @@
+* {
+    background-color: lavender;
+}
+
+div {
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-image: url("../Ejercicio\ 1/Roedores/diva.jpg");
+    background-size: 200px;
+}
+
+.x1y1 {
+    top: 0;
+    left: 0;
+}
+
+.x1y2 {
+    top: 0;
+    left: 200px;
+}
+
+.x1y3 {
+    top: 0;
+    left: 400px;
+}
+
+.x2y1 {
+    top: 200px;
+    left: 0;
+}
+
+.x2y2 {
+    top: 200px;
+    left: 200px;
+}
+
+.x2y3 {
+    top: 200px;
+    left: 400px;
+}
+
+.x3y1 {
+    top: 400px;
+    left: 0;
+}
+
+.x3y2 {
+    top: 400px;
+    left: 200px;
+}
+
+.x3y3 {
+    top: 400px;
+    left: 400px;
+}

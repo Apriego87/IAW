@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', light;
+}
+
+body {  
+    background-color: lavender;
+}
+
+.r1, .r2, .r3, .r4 {
+    width: 45vw;
+    height: 25vh;
+    position: fixed;
+    margin: 3.5vw;
+    text-align: center;
+    line-height: 25vh;
+    font-weight: bolder;
+    border: solid 1px black;
+}
+
+.marcador {
+    border: dotted 3px blue;
+    padding: 2px;
+}
+
+.bien {
+    width: 10vw;
+    left: 10vw;
+    position: absolute;
+}
+
+.b {
+    background-color: lightgreen;
+    border: double 5px black;
+    text-align: center;
+}
+
+.mal {
+    width: 10vw;
+    right: 10vw;
+    position: absolute;
+}
+
+.m {
+    background-color: indianred;
+    border: double 5px black;
+    text-align: center;
+}
+
+.e {
+    text-align: center;
+    margin-top: 2.5vh;
+}
+
+.p {
+    text-align: center;
+    margin-top: 10vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.r1 {
+    background-color: #ACD1AF;
+    bottom: 200px;
+    left: 0;
+}
+
+.r2 {
+    background-color: lightgoldenrodyellow;
+    bottom: 200px;
+    right: 0;
+}
+
+.r3 {
+    background-color: lightskyblue;
+    bottom: 0;
+    left: 0;
+}
+
+.r4 {
+    background-color: #F47174;
+    bottom: 0;
+    right: 0;
+}

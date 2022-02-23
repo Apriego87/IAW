@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas JS</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .top {
+            background-color: cadetblue;
+            height: 33vh;
+        }
+
+        .mid {
+            background-color: coral;
+            height: 34vh;
+        }
+
+        .bot {
+            background-color: limegreen;
+            height: 33vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">Top</div>
+    <div class="mid">Mid</div>
+    <div class="bot">Bot</div>
+
+    <h1>si</h1>
+
+    <script>
+        var nombreVariable = 3
+        var cadena = "si"
+        var num = 12
+        var bool = true
+        var array = [1, 3, 5, 7, 9, "impares", true]
+        var table = {
+            animal1: "Gato",
+            animal2: "Hurón"
+        }
+
+        // Equivalente al "echo" en PHP
+        document.write("<h1>" + array + "</h1>")
+
+        var operaciones = 3 + 4 - 5 * 5 / 2 ** 2
+
+        //  Bucle FOR
+        for (var i = 0; i < 20; i++) {
+            num = num + i
+            document.write("<span>" + num + " </span>")
+        }
+
+        function funcionJuntarCadenas(cadena1, cadena2) {
+            var cadenaJuntada = cadena1 + cadena2
+            return cadenaJuntada
+        }
+
+        var cadena3 = funcionJuntarCadenas("hola", "mundo")
+        document.write(cadena3)
+
+        document.write("<h1>" + array + "</h1>")
+
+        document.write(table["animal1"], " ", table.animal2)
+    </script>
+</body>
+
+</html>
