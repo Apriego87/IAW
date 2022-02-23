@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VuestroNombre</title>
+    <link rel="stylesheet" href="ejercicio.css">
+</head>
+<body>
+    <script>
+        contador = 0
+        function cambiarColor() {
+            divIzq = document.querySelector(".izquierda")
+            if(contador == 0){
+                divIzq.style = "background-color: blue;"
+                contador++
+            }
+            else if(contador ==1){
+                divIzq.style = "background-color: red;"
+                contador = 0
+            }
+        }
+        function cambiarImagen() {
+                img1 = document.querySelector(".img1")
+                img1.src = "./imagen.png"
+                img1.style = "width: 100px; height: 100px;"
+            }
+    </script>
+    <h1 class="nombre">Antonio Priego</h1>
+
+    <div class="izquierda" onclick="cambiarColor(this)">
+            <h1>Div Izquierda</h1>
+    </div>
+
+    <div class="derecha" onclick="cambiarImagen(this)">
+            <h1>Div derecha</h1>
+            <img class="img1" src="http://iessierradeguara.com/wordpress/wp-content/uploads/logo_sierra_video_gala_navidad-682x340.png" >
+            
+        </div>
+    
+</body>
+</html>
