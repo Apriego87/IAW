@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logoBueno.png" class="logo"></a>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Sobre mí</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="textBox">
+            <h1>Página del Proyecto</h1>
+            <p>Página diseñada manualmente como parte del proyecto. <br> Únicamente he necesitado HTML, CSS y
+                JavaScript.</p>
+            <a href="" class="btn">Más información</a>
+        </div>
+    </section>
+
+    <section class="partes">
+        <h1>Componentes del Proyecto</h1>
+        <p>A continuación, recursos sobre los componentes que conforman el proyecto. </p>
+
+        <div class="columna">
+            <div class="partesCol">
+                <h3>Estructura</h3>
+                <p>Estructura del proyecto</p>
+            </div>
+            <div class="partesCol">
+                <h3>Tecnologías</h3>
+                <p>Tecnologías usadas
+                </p>
+            </div>
+            <div class="partesCol">
+                <h3>Imágenes</h3>
+                <p>Biblioteca de imágenes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="red">
+        <h1>Asignaturas</h1>
+        <p>Asignaturas del grado y su aplicación en el proyecto.</p>
+
+        <div class="columna2">
+            <div class="redCol">
+                <img src="images/red.jpg">
+                <a href="parSRI.html">
+                    <div class="layer">
+                        <h3>PAR <br> SRI</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="columna2">
+            <div class="redCol">
+                <img src="images/sist.jpg">
+                <a href="isoASO.html">
+                    <div class="layer">
+                        <h3>ISO <br> ASO</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="columna2">
+            <div class="redCol">
+                <img src="images/html.png">
+                <a href="lmsIAW.html">
+                    <div class="layer">
+                        <h3>LMS <br> IAW</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript para los botones-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style = "right: 0; transition: 0.75s;";
+        }
+
+        function hideMenu() {
+            navLinks.style = "right: -200px; transition: 0.75s;";
+        }
+    </script>
+</body>
+
+</html>
