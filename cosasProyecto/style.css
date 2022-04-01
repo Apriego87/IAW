@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -51,7 +52,6 @@ nav img {
 
 .navLinks ul li:hover::after {
     width: 100%;
-
 }
 
 ul>li>a {
@@ -107,7 +107,8 @@ nav .fa {
     }
 
     nav img {
-        max-width: 100px;
+        max-width: 80px;
+        border: double 6px white;
     }
 
     .navLinks ul li {
@@ -175,6 +176,15 @@ p {
     box-sizing: border-box;
 }
 
+.prueba {
+    display: flex;
+    float: right;
+    position: relative;
+    margin-right: 18vw;
+    margin-top: 5vh;
+    top: 10vh;
+}
+
 h3 {
     text-align: center;
     font-weight: 600;
@@ -188,6 +198,11 @@ h3 {
 @media(max-width: 700px) {
     .columna {
         flex-direction: column;
+    }
+
+    .prueba {
+        position: fixed;
+        bottom: 100px;
     }
 }
 
@@ -267,4 +282,8 @@ h3 {
         bottom: 5px;
         right: 15px;
     }
+}
+
+#parte1 {
+    scroll-behavior: smooth;
 }
