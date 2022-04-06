@@ -1,0 +1,70 @@
+version: "3.9"
+
+services: 
+ web:
+  container_name: webcont
+  networks:
+   redDocker:
+    ipv4_address: 192.168.20.2
+  image: nginx:latest
+  ports:
+   - "8080:80"
+  volumes:
+   - ./code:/code
+   - ./site.conf:/etc/nginx/conf.d/site.conf
+
+  links:
+   - php
+ #networks:
+ # static-network:
+ #  ipv4_address: 172.20.0.2
+  
+ php:
+  container_name: phpcont
+  networks:
+   redDocker:
+    ipv4_address: 192.168.20.3
+  image: php:7-fpm
+  volumes:
+   - ./code:/code
+  links:
+   - mysql
+ #networks:
+ # static-network:
+ #  ipv4_address: 172.20.0.3
+ 
+ mysql:    
+  image: mysql:5.7  
+  container_name: mysqlcont
+  networks:
+   redDocker:
+    ipv4_address: 192.168.20.4 
+  environment:  
+   MYSQL_ROOT_PASSWORD: root
+   MYSQL_DATABASE: dbPrueba  
+   MYSQL_USER: dbUser  
+   MYSQL_PASSWORD: root
+  links:
+   - mysql-data
+  ports:
+   - "3306:3306"
+ #networks:
+ # static-network:
+ #  ipv4_address: 172.20.0.4
+
+ mysql-data:    
+  image: mysql:5.7
+  networks:
+   redDocker:
+    ipv4_address: 192.168.20.5
+  container_name: mysqldatacont 
+  volumes:  
+   - /var/lib/mysql  
+  command: "true"
+
+networks:
+ redDocker:
+  ipam:
+   driver: default
+   config:
+    - subnet: "192.168.20.0/24"
