@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP</title>
+    <link rel="stylesheet" href="styleRegis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -41,7 +46,7 @@
             values ('$name', '$surname', '$email','$hash')";
 
     if (mysqli_query($conexion, $sql)) {
-        echo "Usuario creado correctamente.";
+        echo "<div class='contenedor'><div class='qe'><h1>Usuario creado correctamente!</h1></div> <br> <button onclick=\"location.href='./index.php'\" type=\"boton\" class=\"boton\">Volver al inicio</button></div>";
     } else {
         echo "Error creando el usuario: " . mysqli_error($conexion);
     }
