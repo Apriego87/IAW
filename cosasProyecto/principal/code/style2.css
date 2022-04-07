@@ -6,7 +6,7 @@
     	}
     	
 body {
-	background-image: url(./images/lavender.jpg);
+	background-image: url("./images/lavender.jpg");
 	background-color: lavender;
     	}
     	
@@ -52,6 +52,13 @@ body {
     	}
 
 @media(max-width: 700px){
+
+	body {
+		background-image: url("./images/lavenderVert.jpg");
+		background-size:cover;
+        	background-position: left;
+	}
+
 	.contenedor {
 		flex-direction: column;
 		align-items: center;
@@ -62,8 +69,7 @@ body {
 	.caja {
 		transform: translateY(0%);
 		width: 75%;
-		height: 30vh;
-		padding: 5% 5%;
+		padding: 10% 10%;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -78,7 +84,6 @@ body {
 	
 	.caja3 {
 		transform: translateY(0%);
-		height: 60vh;
 		padding: 0;
 		align-items: center;
 		width: 80vw;
@@ -100,7 +105,7 @@ input, h2 {
     	}
     	
 .boton{
-	width: 150px;
+	width: 135px;
 	height: 30px;
     	}
     	

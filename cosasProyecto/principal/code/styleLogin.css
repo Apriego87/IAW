@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image: url("./images/lavender.jpg");
+	background-image: url("./images/lavenderVert.jpg");
 	background-color: #dad7ec;
 }
 
@@ -29,6 +29,13 @@ h1, h2{
 }
 
 @media(max-width: 700px){
+
+	body{
+		background-image: url("./images/lavenderVert.jpg");
+		background-size:cover;
+        	background-position: left;
+	}
+
 	.contenedor{
 		height: 90vh;
 		width: 100%;
@@ -36,10 +43,13 @@ h1, h2{
 	}
 	
 	.users {
-		width: 80%;
-		height: 80%;
+		width: 85%;
 		overflow: scroll;
 		text-align: center;
 		padding: 10px 10px;
+	}
+	
+	.c {
+		font-size: .85em;
 	}
 }
