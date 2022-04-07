@@ -37,6 +37,7 @@
                 
                 //si coinciden hemos encontrado el usuario
                 if ($fila["email"] == $email){
+                
                     
                     //la contraseña estaría bien introducida
                     if ($fila["password"] == hash('sha256',$pass)){
@@ -55,7 +56,7 @@
 		  // output data of each row
 		  echo "<div class='users'><h2>Usuarios:</h2>";
 		  while($row = mysqli_fetch_assoc($result)) {
-		    echo "<p class='c'><u> ID:</u> " . $row["id"]. " || <u>Nombre:</u> " . $row["name"]. " " . $row["surname"]. " || <u>E-Mail:</u> " . $row["email"] . "<br></p>";
+		    echo "<hr><p class='c'><u> ID:</u> " . $row["id"]. " || <u>Nombre:</u> " . $row["name"]. " " . $row["surname"]. " || <u>E-Mail:</u> " . $row["email"] . "<br></p>";
 		  }
 		  echo "</div></div>";
 		} else {

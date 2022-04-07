@@ -5,8 +5,7 @@
 }
 
 body {
-	background-image: url("./images/lavender.jpg");
-	background-color: #dad7ec;
+	background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("./images/lavender.jpg");
 }
 
 h1, h2{

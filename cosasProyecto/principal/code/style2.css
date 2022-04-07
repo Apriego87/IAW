@@ -6,8 +6,7 @@
     	}
     	
 body {
-	background-image: url("./images/lavender.jpg");
-	background-color: lavender;
+	background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("./images/lavender.jpg");
     	}
     	
 .contenedor{

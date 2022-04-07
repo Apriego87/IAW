@@ -17,8 +17,8 @@
     <div class="caja3">
 	    <form action="./inicio.php" method="post">
 		<h2>Inicio de sesión:</h2>
-		<p>E-Mail: </br> <input type="email" name="mail" /></p>
-		<p>Contraseña: </br> <input type="password" name="pass" /></p>
+		<p>E-Mail: </br> <input type="email" name="mail" required="required" /></p>
+		<p>Contraseña: </br> <input type="password" name="pass" required="required" /></p>
 		<input type="submit" value="Iniciar" class="boton2"/>
     </div>
     </div>

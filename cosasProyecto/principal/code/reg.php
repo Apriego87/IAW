@@ -18,10 +18,10 @@
 	<div class="caja2">
 		<form action="regis.php" method="post">
 			<h2>Registrar usuario:</h2>
-			<p>Nombre: </br> <input type="text" name="name" /></p>
-			<p>Apellido: </br> <input type="text" name="surname" /></p>
-			<p>E-Mail: </br> <input type="email" name="email" /></p>
-			<p>Contraseña: </br> <input type="password" name="password" /></p>
+			<p>Nombre: </br> <input type="text" name="name" required="required" /></p>
+			<p>Apellido: </br> <input type="text" name="surname" required="required" /></p>
+			<p>E-Mail: </br> <input type="email" name="email" required="required" /></p>
+			<p>Contraseña: </br> <input type="password" name="password" required="required" /></p>
 			<input type="submit" value="Registrar" class="boton2"/>
 			</form>
 	</div>
