@@ -18,17 +18,16 @@
     <section class="header">
         <nav>
             <img src="images/logoBueno.png" class="logo">
+            <i class="fa" class="fa-times" onclick="hideMenu()"></i>
             <div class="navLinks" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                
                 <ul>
                     <li><a href="./index.php">Usuarios</a></li>
                     <li><a href="index.html#partes">Información</a></li>
-                    <li><a href="#">Sobre Mí</a></li>
-                    <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="fa"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+        <i class="fa" class="fa-bars" onclick="showMenu()"></i></div>
         <div class="textBox">
             <h1>Microservicios... a tu servicio!</h1>
             <p>Ofrecemos desarrollo de microservicios para tu empresa. <br> Nuestra especialidad son los servicios de
@@ -62,33 +61,34 @@
         <p>Aquí abajo podrás encontrar información más detallada de nuestros planes:</p>
 
         <div class="columna2">
+            <h3>Web Básica</h3>
             <div class="redCol">
                 <img src="images/webSimple.jpg">
                 <a href="parSRI.html">
                     <div class="layer">
-                        <h3>Web Básica</h3>
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="columna2">
+            <h3>Web Completa</h3>
             <div class="redCol">
                 <img src="images/webCompleta.jpg">
                 <a href="isoASO.html">
                     <div class="layer">
-                        <h3>Web Completa</h3>
+                        
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="columna2">
+            <h3>Red y Sistemas</h3>
             <div class="redCol">
                 <img src="images/sisAdmin.png">
                 <a href="lmsIAW.html">
                     <div class="layer">
-                        <h3>Admin. Sist.</h3>
                     </div>
                 </a>
             </div>
@@ -100,7 +100,7 @@
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
-            navLinks.style = "right: 0; transition: 0.75s;";
+            navLinks.style = "display: absolute; right: 0; transition: 0.75s;";
         }
 
         function hideMenu() {

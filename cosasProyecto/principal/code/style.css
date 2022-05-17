@@ -16,42 +16,38 @@
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    top: 0;
+    padding-right: 2%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav img {
-    width: 200px;
+    width: 130px;
     border: double 10px white;
-    margin:0;
+    margin: 2% 4%;
     border-radius: 100%;
 }
 
 .navLinks {
-    flex: 1;
     text-align: right;
 }
 
 .navLinks ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 5px 10px;
     position: relative;
 }
 
-.navLinks ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: #F44336;
-    display: block;
-    margin: auto;
-    transition: 0.3s;
-}
+@media(min-width: 1500px) {
+    nav img {
+        width: 200px;
+    }
 
-.navLinks ul li:hover::after {
-    width: 100%;
+    nav {
+        padding: 2% 6%;
+    }
 }
 
 ul>li>a {
@@ -97,12 +93,21 @@ ul>li>a {
     transition: 0.3s;
 }
 
-nav .fa {
-    display: none;
-}
-
 @media(max-width: 700px) {
+    section {
+        width: 100vw;
+    }
+    .partes{
+        margin-top: 5%;
+    }
+
+    .textBox{
+        top: 65%;
+        padding: 0;
+        height: 70%;
+    }
     .textBox h1 {
+        padding-top: 10px;
         font-size: 20px;
     }
 
@@ -112,46 +117,30 @@ nav .fa {
     }
 
     nav img {
+        height: 100px;
+        width: auto;
         max-width: 50%;
-        position: absolute;
-        left: 25%;
-        top: 6%;
+        position:static;
         border: double 6px white;
     }
 
-    .fa {
-        position: absolute;
-        right: 10px;
-        margin: 0;
-        padding: 0;
-        color: white;
+    nav {
+        top: 10px;
+        position: relative;
+        width: 100vw;
+        font-size: 11px;
     }
 
-    .navLinks ul li {
-        display: block;
+    ul {
+        font-size: 13px;
+        position: relative;
+        right: 2%;
+        text-align: center;
+        width: 40vw;
     }
 
-    .navLinks {
-        position: absolute;
-        background-color: #F44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-    }
-
-    nav .fa {
-        display: block;
-        color: #FFF;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .navLinks ul {
-        padding: 30px;
+    .btn {
+        margin-top: 0;
     }
 }
 
@@ -244,33 +233,18 @@ h3 {
 .layer {
     background-color: transparent;
     height: 120%;
-    width: 100%;
+    width: 120%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -20px;
     transition: 0.5s;
+    font-size: 5px;
 }
 
 .layer:hover {
     background-color: rgba(85, 140, 150, 0.7);
     height: 100%;
-}
-
-.layer h3 {
-    transition: 0.5s;
-    color: black;
-    position: absolute;
-    bottom: 0;
-    left: 20%;
-}
-
-.layer:hover h3 {
-    display: flex;
-    font-size: 20px;
-    font-weight: 600;
-    position: absolute;
-    color: black;
-    left: 20%
+    font-size: 6px;
 }
 
 .columna2 {
@@ -279,7 +253,7 @@ h3 {
     vertical-align: top;
     text-align: center;
     margin: 2%;
-    padding: 20px;
+    padding: 5px;
 }
 
 @media(max-width: 700px) {
@@ -288,23 +262,13 @@ h3 {
     }
 
     .redCol{
-        height: 80%;
+        height: 100%;
     }
 
-    .layer {
-        height: 115%;
+    .columna2 {
+        width: 70vw;
     }
-
-    .layer h3 {
-        position: absolute;
-        font-size: 12px;
-        bottom: 20px;
-        right: 20%;
-    }
-
-    .layer:hover h3 {
-        font-size: 15px;
-    }
+    margin-bottom: 0;
 }
 
 #parte1 {
