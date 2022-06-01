@@ -28,7 +28,6 @@ nav img {
     margin: 2% 4%;
     border-radius: 100%;
 }
-
 .navLinks {
     text-align: right;
 }
@@ -66,7 +65,7 @@ ul>li>a {
 }
 
 .textBox h1 {
-    font-size: 62px;
+    font-size: 50px;
 }
 
 .textBox p {
@@ -97,7 +96,7 @@ ul>li>a {
     section {
         width: 100vw;
     }
-    .partes{
+    .info{
         margin-top: 5%;
     }
 
@@ -144,9 +143,9 @@ ul>li>a {
     }
 }
 
-/* Partes del proyecto */
+/* info del proyecto */
 
-.partes {
+.info {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -211,8 +210,8 @@ h3 {
     }
 }
 
-.red {
-    width: 80%;
+.servicios {
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
@@ -267,8 +266,9 @@ h3 {
 
     .columna2 {
         width: 70vw;
+        margin-bottom: 0;
     }
-    margin-bottom: 0;
+    
 }
 
 #parte1 {
