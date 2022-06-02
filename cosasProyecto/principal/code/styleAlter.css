@@ -159,7 +159,7 @@
 }
 
 .fullWC {
-    border-image: linear-gradient(90deg, coral, rgb(255,200,124), peachpuff, white, peachpuff, rgb(255,200,124), coral) 1;
+    border-image: linear-gradient(90deg, rgb(233,105,44), rgb(255,200,124), peachpuff, white, peachpuff, rgb(255,200,124),rgb(233,105,44) ) 1;
 }
 
 .image img {
