@@ -173,7 +173,7 @@ p {
 
 .partesCol {
     flex-basis: 28%;
-    background: #afabab;
+    background: thistle;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
