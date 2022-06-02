@@ -13,9 +13,25 @@
     position: relative;
 }
 
-.fondo {
+.fondoAS {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./images/sisAdmin.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoWB {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./images/webSimple.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoWC {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./images/webCompleta.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -28,9 +44,23 @@
     justify-content: space-evenly;
 }
 
-.tit {
+.titAS {
     text-align: center;
-    background-image: linear-gradient(rgba(192, 198, 219, 0.55), rgba(255, 255, 255, 0.55)), url(./images/sisAdmin.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.55)), url(./images/sisAdmin.png);
+    padding: 20px 25px;
+    border-radius: 3px;
+}
+
+.titWB {
+    text-align: center;
+    background-image: linear-gradient(lightskyblue, rgba(255, 255, 255, 0.55)), url(./images/sisAdmin.png);
+    padding: 20px 25px;
+    border-radius: 3px;
+}
+
+.titWC {
+    text-align: center;
+    background-image: linear-gradient(rgb(255,200,124), rgba(255, 255, 255, 0.55)), url(./images/sisAdmin.png);
     padding: 20px 25px;
     border-radius: 3px;
 }
@@ -120,8 +150,16 @@
     border-radius: 0.8em;
 }
 
-.full {
+.fullAS {
     border-image: linear-gradient(90deg, black, grey, darkgrey, white, darkgrey, grey, black) 1;
+}
+
+.fullWB {
+    border-image: linear-gradient(90deg, darkcyan, cyan, lightblue, white, lightblue, cyan, darkcyan) 1;
+}
+
+.fullWC {
+    border-image: linear-gradient(90deg, coral, rgb(255,200,124), peachpuff, white, peachpuff, rgb(255,200,124), coral) 1;
 }
 
 .image img {
@@ -130,7 +168,7 @@
     border-radius: 10px;
 }
 
-.boxes {
+.boxesAS {
     flex-basis: 28%;
     background: lightgray;
     border-radius: 10px;
@@ -141,9 +179,45 @@
     font-size: 15px;
 }
 
-.boxes:hover {
+.boxesWB {
+    flex-basis: 28%;
+    background: lightblue;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+}
+
+.boxesWC {
+    flex-basis: 28%;
+    background: papayawhip;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+}
+
+.boxesAS:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
     transition: 0.35s;
+}
+
+.boxesWB:hover {
+    box-shadow: 0 0 20px 0 rgba(15, 84, 116, 0.4);
+    transition: 0.35s;
+}
+
+.boxesWC:hover {
+    box-shadow: 0 0 20px 0 rgba(247, 174, 115, 0.4);
+    transition: 0.35s;
+}
+
+.link {
+    color: white;
 }
 
 @media(max-width: 700px) {
@@ -160,9 +234,11 @@
         height: 25%;
     }
 
-    .tit {
+    .titAS, .titWB, .titWC {
         padding: 10px 15px;
         font-size: 18px;
+        font-size: 1.2em;
+        font-size: 1.2em;
     }
 
     .boton {
@@ -186,7 +262,17 @@
         height: 100%;
     }
 
-    .boxes {
+    .boxesAS {
+        font-size: .65em;
+        width: 80%;
+    }
+
+    .boxesWB {
+        font-size: .65em;
+        width: 80%;
+    }
+
+    .boxesWC {
         font-size: .65em;
         width: 80%;
     }
